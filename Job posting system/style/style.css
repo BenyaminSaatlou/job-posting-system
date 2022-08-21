@@ -1,0 +1,176 @@
+body {
+    background: #35dc9b;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    background: white;
+    padding: 3em;
+    height: auto;
+    width: 30%;
+    border-radius: 20px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.desc {
+    padding-bottom: 6px;
+    font-weight: 700;
+}
+
+table {
+    width: 38%;
+    text-align: left;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+/* for showing the job details that you have posted neatly */
+.postedjob_details {
+    width: 38%;
+    text-align: left;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+/* cleaning up the job result display when you search for a job*/
+.jobresulte {
+    font-weight: bolder;
+}
+
+.jobresulte_values {
+    width: 75%;
+}
+
+.about {
+    float: left;
+}
+/* the styling for the button */
+button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    transition: all 0.2s;
+}
+/* hover over for the button */
+button:hover {
+    color: black;
+    background-color: lawngreen;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-container label {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    display: block;
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    display: inline-block;
+}
+/* input styling*/
+input {
+    text-align: center;
+}
+
+.input-container input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 50%;
+    text-align: center;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: black;
+}
+
+.input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid red;
+}
+
+.input-container textarea {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: black;
+}
+
+.input-container textarea:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid red;
+}
+/* changes the color for the errors */
+.error {
+    color: red;
+}
+
+
+/* nav bar styling */
+
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: transparent;
+    margin-right: 40px;
+}
+
+.nav li {
+    float: right;
+}
+
+.nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: large;
+}
+/* for hovering over the nav bar*/
+.nav li a:hover:not(.active) {
+    background-color: lime;
+}
+/* on the nav bar it shows which page you are on by marking it light grey */
+.active {
+    background-color: #d3d3d3;
+}
+/* hides all of the inputs  */
+#all_options {
+    display: none;
+}
